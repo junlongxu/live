@@ -39,12 +39,12 @@ export default {
               "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
           }
         ],
-        poster: "/static/images/author.jpg"
+        // poster: "/static/images/author.jpg"
       }
     };
   },
   mounted() {
-    // console.log('this is current player instance object', this.player)
+    console.log('------------->this is current player instance object')
   },
   computed: {
     player() {
@@ -73,5 +73,8 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
+.video-js{
+  margin: 0 auto;
+}
 </style>
